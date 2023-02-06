@@ -1,0 +1,134 @@
+@use "./fonts" as *;
+@use "./variables" as *;
+@use "./mixins" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.4rem;
+    font-family: "Avenir next";
+    margin: 1.6rem;
+    padding: 0;
+    background-color: $color--primary-white;
+  }
+  @include tablet {
+    margin: 1.6rem 3.6rem;
+  }
+  @include desktop {
+    margin: 1.6rem 10rem;
+  }
+}
+
+* a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: $color--primary-white;
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 3.3rem;
+    line-height: 4.4rem;
+    font-weight: 700;
+  }
+  @include desktop {
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+    font-weight: 700;
+  }
+}
+h2 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 1.6rem;
+  }
+}
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  @include tablet {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  @include desktop {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.6rem;
+  background-color: $color--primary-blue;
+  border-radius: 0.4rem;
+  border: none;
+  &__text {
+    width: 80%;
+    color: $color--primary-white;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 700;
+    @include tablet {
+      font-size: 1.2rem;
+    }
+  }
+
+  &:hover {
+    background-color: $color--secondary-darkblue;
+  }
+}
+
+* textarea {
+  font-family: "Avenir next";
+}
+
+* hr {
+  margin: 1.1rem 0;
+  border: 0;
+  border-top: 0.15rem solid $color--secondary-mercury;
+  @include tablet {
+    margin: 1.6rem 0;
+  }
+}
+
+.subtitle {
+  margin-top: 1.6rem;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: $color--primary-silver;
+  @include tablet {
+    font-size: 1.2rem;
+  }
+}
