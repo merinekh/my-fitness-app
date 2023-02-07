@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import {
   MdOutlineDashboard,
   MdManageAccounts,
@@ -7,17 +7,20 @@ import {
   MdOutlineFastfood,
 } from "react-icons/md";
 import { GiMuscleUp } from "react-icons/gi";
+import gym from "../../assets/images/gym.png";
 import "./SideBar.scss";
 function SideBar() {
   return (
     <>
       <div className="sidebar">
-        <img src="" alt="L" className="sidebar__logo" />
+        <Link to="/">
+          <img src={gym} alt="L" className="sidebar__logo" />
+        </Link>
         <div className="sidebar-nav">
-          <NavLink className="sidebar-link">
+          <NavLink to="/" className="sidebar-link">
             <MdOutlineDashboard className="sidebar-link__icon" />
           </NavLink>
-          <NavLink className="sidebar-link">
+          <NavLink to="/exercices" className="sidebar-link">
             <GiMuscleUp className="sidebar-link__icon" />
           </NavLink>
           <NavLink className="sidebar-link">

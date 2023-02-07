@@ -10,7 +10,7 @@ function App() {
         <SideBar />
         <Routes>
           <Route path="" element={<HomePage />} />
-          <Route path="/videoUpload" element={<Page />} />
+          <Route path="/exercices" element={<Page />} />
           <Route path="/:Id" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
