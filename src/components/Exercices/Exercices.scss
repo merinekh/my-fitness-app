@@ -2,19 +2,27 @@
   &-exercices {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    padding: 1rem;
+    width: 34%;
+    padding: 1rem 0;
+    background-color: #e6e6e6;
 
     &-filter {
       display: flex;
       h3 {
         margin: 0 1rem;
+        padding: 0 1rem;
+        border-bottom: 0.2rem solid #cccc;
       }
     }
 
     &-info {
       display: flex;
       justify-content: space-between;
+      padding: 0 1rem;
+    }
+    &__image {
+      border-bottom: #cccc 0.2rem solid;
+      margin-bottom: 2rem;
     }
   }
 }

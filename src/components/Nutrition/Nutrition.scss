@@ -2,9 +2,8 @@
   &-nutrition {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 25%;
-    padding: 1rem;
+    justify-content: center;
+    width: 30%;
   }
 
   &-macronutriments {
@@ -17,22 +16,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 33%;
+    width: 43%;
     position: relative;
-    height: 6rem;
-    padding: 1rem 2rem;
+    height: 7rem;
+    padding: 1rem;
+    background-color: #333333;
 
     &__icon {
       display: flex;
       align-self: flex-end;
-      scale: 2;
-      height: 4rem;
-      width: 4rem;
+      color: skyblue;
+      height: 5rem;
+      width: 5rem;
     }
     &-text {
       display: flex;
       flex-direction: column;
       * {
+        color: white;
         margin: 0;
       }
     }

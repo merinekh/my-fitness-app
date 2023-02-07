@@ -24,8 +24,7 @@ function Nutrition() {
               <h3 className="main-macronutriment__text">15/40g</h3>
             </div>
           </div>
-        </div>
-        <div className="main-macronutriments">
+
           <div className="main-macronutriment">
             <AiOutlineFire className="main-macronutriment__icon"></AiOutlineFire>
             <div className="main-macronutriment-text">

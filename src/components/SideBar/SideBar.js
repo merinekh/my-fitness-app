@@ -12,7 +12,7 @@ function SideBar() {
   return (
     <>
       <div className="sidebar">
-        <img src="" alt="LOGO" className="sidebar__logo" />
+        <img src="" alt="L" className="sidebar__logo" />
         <div className="sidebar-nav">
           <NavLink className="sidebar-link">
             <MdOutlineDashboard className="sidebar-link__icon" />

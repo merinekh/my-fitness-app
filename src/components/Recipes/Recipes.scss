@@ -6,7 +6,9 @@
   &-recipe {
     display: flex;
     align-items: baseline;
+    background-color: #b3b3b3;
     &__icon {
+      align-self: center;
       margin: 0 2rem;
       height: 3rem;
       width: 3rem;
@@ -14,7 +16,7 @@
     &-text {
       display: flex;
       flex-direction: column;
-      width: 70%;
+      width: 50%;
       * {
         margin: 0;
       }
