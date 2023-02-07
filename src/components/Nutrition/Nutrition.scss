@@ -1,0 +1,39 @@
+.main {
+  &-nutrition {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 1rem;
+  }
+
+  &-macronutriments {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &-macronutriment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    position: relative;
+    height: 6rem;
+    padding: 1rem 2rem;
+
+    &__icon {
+      display: flex;
+      align-self: flex-end;
+      scale: 2;
+      height: 4rem;
+      width: 4rem;
+    }
+    &-text {
+      display: flex;
+      flex-direction: column;
+      * {
+        margin: 0;
+      }
+    }
+  }
+}

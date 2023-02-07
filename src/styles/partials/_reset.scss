@@ -2,11 +2,11 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
 
 html {
   font-size: 62.5%;
@@ -62,11 +62,22 @@ h2 {
   }
 }
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.8rem;
   font-weight: 700;
   @include tablet {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+}
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 1rem;
     line-height: 2.2rem;
   }
 }

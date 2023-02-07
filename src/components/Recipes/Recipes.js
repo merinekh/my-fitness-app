@@ -1,6 +1,7 @@
 import React from "react";
 import lunch from "../../assets/images/lunch-time.png";
 import dinner from "../../assets/images/dinner.png";
+import "./Recipes.scss";
 
 function Recipes() {
   return (

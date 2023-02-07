@@ -15,16 +15,16 @@ function SideBar() {
         <img src="" alt="LOGO" className="sidebar__logo" />
         <div className="sidebar-nav">
           <NavLink className="sidebar-link">
-            <MdOutlineDashboard />
+            <MdOutlineDashboard className="sidebar-link__icon" />
           </NavLink>
           <NavLink className="sidebar-link">
-            <GiMuscleUp />
+            <GiMuscleUp className="sidebar-link__icon" />
           </NavLink>
           <NavLink className="sidebar-link">
-            <MdOutlineAnalytics />
+            <MdOutlineAnalytics className="sidebar-link__icon" />
           </NavLink>
           <NavLink className="sidebar-link">
-            <MdOutlineFastfood />
+            <MdOutlineFastfood className="sidebar-link__icon" />
           </NavLink>
         </div>
       </div>

@@ -5,10 +5,10 @@ import SideBar from "../../components/SideBar/SideBar";
 
 function HomePage() {
   return (
-    <div className="page-container">
-      <News />
+    <>
+      {/* <News /> */}
       <Main />
-    </div>
+    </>
   );
 }
 

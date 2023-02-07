@@ -2,16 +2,17 @@ import React from "react";
 import Dashboard from "../Dashboard/Dashboard";
 import Exercices from "../Exercices/Exercices";
 import Nutrition from "../Nutrition/Nutrition";
-import Recipes from "../Recipes/Recipes";
+
+import "./Main.scss";
 
 function Main() {
   return (
-    <>
+    <div className="main">
       <Nutrition />
-      <Recipes />
+
       <Exercices />
       <Dashboard />
-    </>
+    </div>
   );
 }
 

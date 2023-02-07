@@ -2,6 +2,8 @@ import React from "react";
 import { GiMeat, GiWheat } from "react-icons/gi";
 import { AiOutlineFire } from "react-icons/ai";
 import { MdOutlineWaterDrop } from "react-icons/md";
+import Recipes from "../Recipes/Recipes";
+import "./Nutrition.scss";
 
 function Nutrition() {
   return (
@@ -22,6 +24,8 @@ function Nutrition() {
               <h3 className="main-macronutriment__text">15/40g</h3>
             </div>
           </div>
+        </div>
+        <div className="main-macronutriments">
           <div className="main-macronutriment">
             <AiOutlineFire className="main-macronutriment__icon"></AiOutlineFire>
             <div className="main-macronutriment-text">
@@ -37,6 +41,7 @@ function Nutrition() {
             </div>
           </div>
         </div>
+        <Recipes />
       </div>
     </>
   );

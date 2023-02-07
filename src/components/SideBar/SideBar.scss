@@ -6,5 +6,17 @@
   &-nav {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+  }
+  &-link {
+    display: flex;
+    justify-content: center;
+
+    &__icon {
+      padding: 1rem;
+      height: 2rem;
+      width: 2rem;
+      color: gray;
+    }
   }
 }
