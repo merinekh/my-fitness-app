@@ -1,21 +1,23 @@
-.main-recipes {
-  display: flex;
-  flex-direction: column;
-}
-.main-recipe {
-  display: flex;
-  align-items: baseline;
-  &__icon {
-    margin: 0 2rem;
-    height: 3rem;
-    width: 3rem;
-  }
-  &-text {
+.main {
+  &-recipes {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    * {
-      margin: 0;
+  }
+  &-recipe {
+    display: flex;
+    align-items: baseline;
+    &__icon {
+      margin: 0 2rem;
+      height: 3rem;
+      width: 3rem;
+    }
+    &-text {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      * {
+        margin: 0;
+      }
     }
   }
 }

@@ -1,0 +1,24 @@
+.main {
+  &-dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    justify-content: space-between;
+    width: 16%;
+    &-content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-upper,
+  &-down {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-upper {
+    &__image {
+      width: 50%;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import meter from "../../assets/images/meter.png";
 import meterwithout from "../../assets/images/meterwithout.png";
 import cardio from "../../assets/images/cardio.png";
+import "./Dashboard.scss";
 
 function Dashboard() {
   return (
