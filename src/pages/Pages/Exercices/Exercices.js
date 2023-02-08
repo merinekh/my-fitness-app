@@ -63,6 +63,36 @@ function ExercicesPage() {
       });
   };
   console.log(data);
+  const card = () => {
+    return data.map((element) => {
+      return (
+        <div className="exercices-card" key={element.id}>
+          <h2 className="exercices-card__title">
+            {element.name.toUpperCase()}
+          </h2>
+          <img
+            src={element.gifUrl}
+            alt="gif-exercice"
+            className="exercices-card__image"
+          />
+          <div className="exercices-card-infos">
+            <div className="exercices-card-info">
+              <h4 className="exercices-card__subtitle">Targeted: </h4>
+              <h3 className="exercices-card__target">
+                {element.target.toUpperCase()}
+              </h3>
+            </div>
+            <div className="exercices-card-info">
+              <h4 className="exercices-card__subtitle">Body Part: </h4>
+              <h3 className="exercices-card__target">
+                {element.bodyPart.toUpperCase()}
+              </h3>
+            </div>
+          </div>
+        </div>
+      );
+    });
+  };
 
   return (
     <div className="exercices">
@@ -70,8 +100,17 @@ function ExercicesPage() {
         className="exercices-dropdown"
         onChange={(e) => handleSelect(e.target.value.replace(/ /g, "%20"))}
       >
+        <option value=""></option>
         {dropDown}
       </select>
+
+      <div
+        className="exercices-cards carousel slide"
+        id="carouselExampleControls"
+        data-ride="carousel"
+      >
+        {card()}
+      </div>
     </div>
   );
 }
