@@ -7,9 +7,6 @@
 
   &-cards {
     display: flex;
-    flex-wrap: wrap;
-    scroll-behavior: auto;
-    height: 60vh;
   }
   &-card {
     width: 30%;
@@ -39,5 +36,13 @@
       align-items: baseline;
       width: 100%;
     }
+  }
+}
+.carousel {
+  display: flex;
+  width: 100%;
+  button {
+    display: flex;
+    position: relative;
   }
 }

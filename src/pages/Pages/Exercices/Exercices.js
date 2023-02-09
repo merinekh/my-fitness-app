@@ -66,7 +66,7 @@ function ExercicesPage() {
   const card = () => {
     return data.map((element) => {
       return (
-        <div className="exercices-card" key={element.id}>
+        <div className="carousel-item exercices-card" key={element.id}>
           <h2 className="exercices-card__title">
             {element.name.toUpperCase()}
           </h2>
@@ -104,7 +104,32 @@ function ExercicesPage() {
         {dropDown}
       </select>
 
-      <div className="exercices-cards">{card()}</div>
+      <div
+        id="myCarousel"
+        class="carousel slide container"
+        data-bs-ride="carousel"
+      >
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <div className="exercices-cards carousel-inner">{card()}</div>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
   );
 }
