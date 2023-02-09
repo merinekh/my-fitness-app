@@ -104,13 +104,7 @@ function ExercicesPage() {
         {dropDown}
       </select>
 
-      <div
-        className="exercices-cards carousel slide"
-        id="carouselExampleControls"
-        data-ride="carousel"
-      >
-        {card()}
-      </div>
+      <div className="exercices-cards">{card()}</div>
     </div>
   );
 }
