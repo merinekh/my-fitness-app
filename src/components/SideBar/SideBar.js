@@ -23,7 +23,7 @@ function SideBar() {
           <NavLink to="/exercices" className="sidebar-link">
             <GiMuscleUp className="sidebar-link__icon" />
           </NavLink>
-          <NavLink className="sidebar-link">
+          <NavLink to="/userPage" className="sidebar-link">
             <MdOutlineAnalytics className="sidebar-link__icon" />
           </NavLink>
           <NavLink className="sidebar-link">
