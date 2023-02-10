@@ -1,20 +1,20 @@
 .sidebar {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
-  width: 10%;
+  width: 100%;
   img {
     display: flex;
-    margin: 1rem;
+    margin: 1rem 0;
     height: 4rem;
     width: 4rem;
   }
   &-nav {
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    height: 90%;
+    padding: 1rem 0;
+    width: 100%;
     justify-content: space-evenly;
   }
   &-link {
@@ -23,8 +23,8 @@
 
     &__icon {
       padding: 1rem;
-      height: 3.2rem;
-      width: 3.2rem;
+      height: 5rem;
+      width: 5rem;
       color: gray;
     }
   }

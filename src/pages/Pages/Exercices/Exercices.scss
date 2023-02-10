@@ -3,10 +3,17 @@
 .exercices {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   align-items: center;
   width: 90%;
 
+  &-dropdown {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    border: #0095ff;
+    border-radius: 2rem;
+  }
   &-cards {
     display: flex;
   }

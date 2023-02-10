@@ -10,7 +10,7 @@ function ExercicesPage() {
   const [equipment, setEquipment] = useState([]);
   const [equipments, setEquipments] = useState([]);
 
-  // =============Import Video info for SideBar=================
+  // =============Import Equipment info for NavBar=================
 
   const API_URL = "http://localhost:8080/";
   const API_PATH = "exercices";
@@ -67,7 +67,7 @@ function ExercicesPage() {
   // =======================Render Equipments========================================
   const dropDown = equipments.map((element, i) => (
     <option key={i} value={element} className="exercices-dropdown__option">
-      {element}
+      {element.toUpperCase()}
     </option>
   ));
 
@@ -160,10 +160,11 @@ function ExercicesPage() {
   return (
     <div className="exercices">
       <select
-        className="exercices-dropdown"
+        className="exercices-dropdown selectpicker"
+        data-style="btn-primary"
         onChange={(e) => handleSelect(e.target.value)}
       >
-        <option value=""></option>
+        <option value="">Select Equipment</option>
         {dropDown}
       </select>
 
