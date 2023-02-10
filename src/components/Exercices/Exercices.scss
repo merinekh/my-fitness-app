@@ -1,17 +1,27 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
 .main {
   &-exercices {
     display: flex;
     flex-direction: column;
-    width: 34%;
-    padding: 1rem 0;
+    width: 100%;
+    padding: 1rem;
     background-color: #e6e6e6;
 
     &-filter {
       display: flex;
+      justify-content: space-between;
+      width: 100%;
       h3 {
-        margin: 0 1rem;
+        margin: 0 0.5rem;
         padding: 0 1rem;
         border-bottom: 0.2rem solid #cccc;
+      }
+      @include tablet {
+        justify-content: space-evenly;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
       }
     }
 
@@ -23,6 +33,9 @@
     &__image {
       border-bottom: #cccc 0.2rem solid;
       margin-bottom: 2rem;
+    }
+    @include tablet {
+      width: 33%;
     }
   }
 }
