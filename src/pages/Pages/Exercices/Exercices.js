@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Exercices.scss";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import Carousel from "react-bootstrap/Carousel";
 
 function ExercicesPage() {
   const [data, setData] = useState([]);
@@ -110,40 +112,49 @@ function ExercicesPage() {
   const card = () => {
     return equipment.map((element) => {
       return (
-        <div className="carousel-item exercices-card" key={element.id}>
-          <h2 className="exercices-card__title">
-            {element.name.toUpperCase()}
-          </h2>
-          <img
-            src={element.gifUrl}
-            alt="gif-exercice"
-            className="exercices-card__image"
-          />
-          <div className="exercices-card-infos">
-            <div className="exercices-card-info">
-              <h4 className="exercices-card__subtitle">Targeted: </h4>
-              <h3 className="exercices-card__target">
-                {element.target.toUpperCase()}
-              </h3>
+        <Carousel.Item>
+          <div className="carousel-item exercices-card" key={element.id}>
+            <h2 className="exercices-card__title">
+              {element.name.toUpperCase()}
+            </h2>
+            <img
+              src={element.gifUrl}
+              alt="gif-exercice"
+              className="exercices-card__image"
+            />
+            <div className="exercices-card-infos">
+              <div className="exercices-card-info">
+                <h4 className="exercices-card__subtitle">Targeted: </h4>
+                <h3 className="exercices-card__target">
+                  {element.target.toUpperCase()}
+                </h3>
+              </div>
+              <div className="exercices-card-info">
+                <h4 className="exercices-card__subtitle">Body Part: </h4>
+                <h3 className="exercices-card__target">
+                  {element.bodyPart.toUpperCase()}
+                </h3>
+              </div>
             </div>
-            <div className="exercices-card-info">
-              <h4 className="exercices-card__subtitle">Body Part: </h4>
-              <h3 className="exercices-card__target">
-                {element.bodyPart.toUpperCase()}
-              </h3>
-            </div>
-          </div>
 
-          <button
-            className="exercices-card__button"
-            onClick={handleSave}
-            id={element.id}
-          >
-            Save
-          </button>
-        </div>
+            <button
+              className="exercices-card__button"
+              onClick={handleSave}
+              id={element.id}
+            >
+              Save
+            </button>
+          </div>
+        </Carousel.Item>
       );
     });
+  };
+
+  //=================================Carousel=============================================
+  const [index, setIndex] = useState(0);
+
+  const handleSelect2 = (selectedIndex, e) => {
+    setIndex(selectedIndex);
   };
 
   return (
@@ -156,38 +167,13 @@ function ExercicesPage() {
         {dropDown}
       </select>
 
-      <div
-        id="myCarousel"
-        className="carousel slide container"
-        data-bs-ride="carousel"
+      <Carousel
+        className="exercices-cards carousel-inner"
+        activeIndex={index}
+        onSelect={handleSelect2}
       >
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <div className="exercices-cards carousel-inner">{card()}</div>
-
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
+        {card()}
+      </Carousel>
     </div>
   );
 }
