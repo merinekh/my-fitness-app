@@ -2,15 +2,38 @@ import React, { useEffect, useState } from "react";
 import "./Exercices.scss";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import listOfEquipments from "../../../data/listOfEquipment.json";
-import allExercices from "../../../data/AllExercices.json";
 
 function ExercicesPage() {
-  const params = useParams();
-  const allExercicesData = allExercices;
-  const [data, setData] = useState(allExercicesData);
+  const [data, setData] = useState([]);
   const [equipment, setEquipment] = useState([]);
-  const [equipments, setEquipments] = useState(listOfEquipments);
+  const [equipments, setEquipments] = useState([]);
+
+  // =============Import Video info for SideBar=================
+
+  const API_URL = "http://localhost:8080/";
+  const API_PATH = "exercices";
+
+  useEffect(() => {
+    axios
+      .get(API_URL + API_PATH)
+      .then((response) => {
+        setData(response.data);
+        // console.log(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    axios
+      .get(API_URL + API_PATH + `/equipments`)
+      .then((response) => {
+        setEquipments(response.data);
+        // console.log(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   // useEffect(() => {
   //   const options = {
@@ -48,7 +71,7 @@ function ExercicesPage() {
 
   // console.log(newEquipments);
 
-  // ========================Onclick Filter=========================================
+  // ========================OnclickHandler Filter=========================================
   const handleSelect = (e) => {
     // const options = {
     //   method: "GET",
@@ -67,18 +90,25 @@ function ExercicesPage() {
     //   .catch(function (error) {
     //     console.error(error);
     //   });
-    const dataFilter = allExercices.filter((element) => {
-      if (element.equipment === e) {
-        return element;
-      } else {
-        return "not matching";
-      }
-    });
-    setData(dataFilter);
+    const dataFilter = data.filter((element) => element.equipment === e);
+    setEquipment(dataFilter);
   };
-  // console.log(data);
+  // console.log(equipment);
+
+  // ========================OnclickHandler Save Exercice=========================================
+
+  const handleSave = (e) => {
+    axios
+      .post(API_URL + API_PATH + `/favorite`, e.target.id)
+      .then(alert("Saved"))
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  // ========================Card Generator===============================================
   const card = () => {
-    return data.map((element) => {
+    return equipment.map((element) => {
       return (
         <div className="carousel-item exercices-card" key={element.id}>
           <h2 className="exercices-card__title">
@@ -104,7 +134,13 @@ function ExercicesPage() {
             </div>
           </div>
 
-          <button className="exercices-card__button">Save</button>
+          <button
+            className="exercices-card__button"
+            onClick={handleSave}
+            id={element.id}
+          >
+            Save
+          </button>
         </div>
       );
     });
