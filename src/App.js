@@ -12,10 +12,10 @@ function App() {
       <BrowserRouter className="page-container">
         <SideBar />
         <Routes>
-          <Route path="" element={<HomePage />} />
+          <Route path="/HomePage" element={<HomePage />} />
           <Route path="/exercices" element={<ExercicesPage />} />
           <Route path="/userPage" element={<UserPage />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>

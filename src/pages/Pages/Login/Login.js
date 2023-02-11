@@ -57,8 +57,8 @@ function Login() {
   return (
     <>
       {user ? (
-        <div>
-          <h2>Welcome, {user}!</h2>
+        <div className="login-success">
+          <h2>Welcome, {user} to you Fitness App!</h2>
           <button
             className="btn btn-primary"
             type="button"

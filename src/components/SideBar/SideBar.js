@@ -2,9 +2,8 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import {
   MdOutlineDashboard,
-  MdManageAccounts,
   MdOutlineAnalytics,
-  MdOutlineFastfood,
+  MdLogin,
 } from "react-icons/md";
 import { GiMuscleUp } from "react-icons/gi";
 import gym from "../../assets/images/gym.png";
@@ -13,11 +12,12 @@ function SideBar() {
   return (
     <>
       <div className="sidebar">
-        <Link to="/">
+        {/* <Link to={user ? "/HomePage" : "/"}> */}
+        <Link to="/HomePage">
           <img src={gym} alt="L" className="sidebar__logo" />
         </Link>
         <div className="sidebar-nav">
-          <NavLink to="/" className="sidebar-link">
+          <NavLink to="/HomePage" className="sidebar-link">
             <MdOutlineDashboard className="sidebar-link__icon" />
           </NavLink>
           <NavLink to="/exercices" className="sidebar-link">
@@ -26,8 +26,8 @@ function SideBar() {
           <NavLink to="/userPage" className="sidebar-link">
             <MdOutlineAnalytics className="sidebar-link__icon" />
           </NavLink>
-          <NavLink to="/login" className="sidebar-link">
-            <MdOutlineFastfood className="sidebar-link__icon" />
+          <NavLink to="/" className="sidebar-link">
+            <MdLogin className="sidebar-link__icon" />
           </NavLink>
         </div>
       </div>
