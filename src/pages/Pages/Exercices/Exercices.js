@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Exercices.scss";
 import axios from "axios";
-import { useParams } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Carousel from "react-bootstrap/Carousel";
 

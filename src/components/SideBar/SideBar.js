@@ -26,7 +26,7 @@ function SideBar() {
           <NavLink to="/userPage" className="sidebar-link">
             <MdOutlineAnalytics className="sidebar-link__icon" />
           </NavLink>
-          <NavLink className="sidebar-link">
+          <NavLink to="/login" className="sidebar-link">
             <MdOutlineFastfood className="sidebar-link__icon" />
           </NavLink>
         </div>
