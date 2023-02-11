@@ -8,6 +8,8 @@ import {
 import { GiMuscleUp } from "react-icons/gi";
 import gym from "../../assets/images/gym.png";
 import "./SideBar.scss";
+import DeleteIcon from "@mui/icons-material/Delete";
+
 function SideBar() {
   return (
     <>

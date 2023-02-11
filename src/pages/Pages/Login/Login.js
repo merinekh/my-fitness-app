@@ -10,6 +10,7 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [formType, setFormType] = useState("login");
+  const [userData, setUserData] = useState([]);
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -29,8 +30,9 @@ function Login() {
           password,
         })
         .then((res) => {
-          console.log(res.data);
-          setUser(res.data);
+          // console.log(res.data);
+          setUser(res.data.username);
+          setUserData(res.data);
         })
         .catch((error) => {
           alert(error.response.data);
@@ -54,19 +56,36 @@ function Login() {
   const handleLogout = () => {
     setUser(null);
   };
+  // console.log(userData);
   return (
     <>
       {user ? (
-        <div className="login-success">
-          <h2>Welcome, {user} to you Fitness App!</h2>
-          <button
-            className="btn btn-primary"
-            type="button"
-            onClick={handleLogout}
-          >
-            Logout
-          </button>
-        </div>
+        <>
+          <div className="login-success">
+            <h1 className="login__title">
+              Welcome, {user} to you Fitness App!
+            </h1>
+            <div className="login-profile">
+              <img
+                className="login-profile__avatar"
+                src={userData.avatar}
+                alt={userData.name}
+              />
+              <p className="login-profile__text">Name: {userData.name}</p>
+              <p className="login-profile__text">Email: {userData.email}</p>
+              <p className="login-profile__text">
+                Location: {userData.location}
+              </p>
+            </div>
+            <button
+              className="btn btn-primary"
+              type="button"
+              onClick={handleLogout}
+            >
+              Logout
+            </button>
+          </div>
+        </>
       ) : (
         <div className="login-container">
           <h1 className="login-title">
