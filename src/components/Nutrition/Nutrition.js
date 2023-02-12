@@ -14,14 +14,14 @@ function Nutrition() {
             <GiMeat className="main-macronutriment__icon"></GiMeat>
             <div className="main-macronutriment-text">
               <h4 className="main-macronutriment__subtitle">Protein</h4>
-              <h3 className="main-macronutriment__text">15/40g</h3>
+              <h4 className="main-macronutriment__text">15/40g</h4>
             </div>
           </div>
           <div className="main-macronutriment">
             <GiWheat className="main-macronutriment__icon"></GiWheat>
             <div className="main-macronutriment-text">
               <h4 className="main-macronutriment__subtitle">Carbs</h4>
-              <h3 className="main-macronutriment__text">15/40g</h3>
+              <h4 className="main-macronutriment__text">15/40g</h4>
             </div>
           </div>
 
@@ -29,14 +29,14 @@ function Nutrition() {
             <AiOutlineFire className="main-macronutriment__icon"></AiOutlineFire>
             <div className="main-macronutriment-text">
               <h4 className="main-macronutriment__subtitle">Fat</h4>
-              <h3 className="main-macronutriment__text">15/40g</h3>
+              <h4 className="main-macronutriment__text">15/40g</h4>
             </div>
           </div>
           <div className="main-macronutriment">
             <MdOutlineWaterDrop className="main-macronutriment__icon"></MdOutlineWaterDrop>
             <div className="main-macronutriment-text">
               <h4 className="main-macronutriment__subtitle">Water</h4>
-              <h3 className="main-macronutriment__text">1/5L</h3>
+              <h4 className="main-macronutriment__text">1/5L</h4>
             </div>
           </div>
         </div>
