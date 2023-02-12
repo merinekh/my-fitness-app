@@ -67,4 +67,10 @@
 .main-recipe__title {
   font-size: 1.6rem;
   margin: 1rem 0;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .main-recipe__title {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=Recipes.css.map */

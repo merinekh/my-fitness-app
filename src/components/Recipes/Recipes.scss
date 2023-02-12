@@ -1,3 +1,4 @@
+@use "../../styles/partials/mixins.scss" as *;
 .main {
   &-recipes {
     display: flex;
@@ -68,6 +69,10 @@
     &__title {
       font-size: 1.6rem;
       margin: 1rem 0;
+      font-weight: bold;
+      @include tablet {
+        font-size: 1rem;
+      }
     }
   }
 }
