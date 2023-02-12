@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(../../assets/fonts/OpenSans-VariableFont.ttf) format("truetype");
+}
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.4rem;
+    font-family: "Open Sans";
+    margin: 1.6rem;
+    padding: 0;
+    background-color: #ffffff;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 1.6rem 3.6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    margin: 1.6rem 10rem;
+  }
+}
+
+* a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+
+.btn {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
+  background-color: #0095ff;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 2rem;
+  box-shadow: 0rem 0.8rem 1.6rem 0.4rem #9e9e9e;
+  margin: 5rem 0;
+  background-color: rgba(204, 204, 204, 0.8);
+}/*# sourceMappingURL=App.css.map */

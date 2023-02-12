@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    flex-direction: row;
+    padding: 2rem;
+  }
+}/*# sourceMappingURL=Main.css.map */

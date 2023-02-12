@@ -1,0 +1,82 @@
+.exercices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.exercices-dropdown {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  border: #0095ff;
+  border-radius: 2rem;
+}
+.exercices-cards {
+  display: flex;
+}
+.exercices-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 0.1rem solid #9e9e9e;
+  border-radius: 2rem;
+  box-shadow: 0rem 0.8rem 1.6rem 0.4rem #9e9e9e;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: rgba(244, 244, 244, 0.692);
+  align-items: center;
+}
+.exercices-card__image {
+  display: flex;
+  border-radius: 2rem;
+  width: 100%;
+}
+.exercices-card-infos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.exercices-card-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 1rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.exercices-card__button {
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #0095ff;
+  color: white;
+}
+.exercices-card__button:hover {
+  background-color: #0065ad;
+}
+@media screen and (min-width: 320px) {
+  .exercices-card {
+    width: 100%;
+  }
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+}
+.carousel-item {
+  width: 95%;
+}
+@media screen and (min-width: 768px) {
+  .carousel-inner {
+    display: flex;
+    padding: 2rem 4rem;
+  }
+  .carousel-item {
+    width: 95%;
+  }
+}/*# sourceMappingURL=Exercices.css.map */

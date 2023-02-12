@@ -1,0 +1,39 @@
+.main-exercices {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  background-color: #e6e6e6;
+}
+.main-exercices-filter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-exercices-filter h3 {
+  margin: 0 0.5rem;
+  padding: 0 1rem;
+  border-bottom: 0.2rem solid rgba(204, 204, 204, 0.8);
+}
+@media screen and (min-width: 768px) {
+  .main-exercices-filter {
+    justify-content: space-evenly;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+.main-exercices-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.main-exercices__image {
+  border-bottom: rgba(204, 204, 204, 0.8) 0.2rem solid;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .main-exercices {
+    width: 33%;
+  }
+}/*# sourceMappingURL=Exercices.css.map */

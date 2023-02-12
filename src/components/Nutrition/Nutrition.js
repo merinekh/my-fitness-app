@@ -9,7 +9,7 @@ function Nutrition() {
   return (
     <>
       <div className="main-nutrition">
-        <div className="main-macronutriments">
+        {/* <div className="main-macronutriments">
           <div className="main-macronutriment">
             <GiMeat className="main-macronutriment__icon"></GiMeat>
             <div className="main-macronutriment-text">
@@ -36,10 +36,10 @@ function Nutrition() {
             <MdOutlineWaterDrop className="main-macronutriment__icon"></MdOutlineWaterDrop>
             <div className="main-macronutriment-text">
               <h4 className="main-macronutriment__subtitle">Water</h4>
-              <h4 className="main-macronutriment__text">1/5L</h4>
+              <h4 className="main-macronutriment__text">3/5L</h4>
             </div>
           </div>
-        </div>
+        </div> */}
         <Recipes />
       </div>
     </>

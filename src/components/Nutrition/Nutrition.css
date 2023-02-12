@@ -1,0 +1,41 @@
+.main-nutrition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main-nutrition {
+    width: 33%;
+  }
+}
+.main-macronutriments {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.main-macronutriment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  position: relative;
+  border: #b3b3b3 solid 1px;
+  padding: 1rem 2rem;
+  background-color: #333333;
+}
+.main-macronutriment__icon {
+  display: flex;
+  align-self: flex-end;
+  color: skyblue;
+  height: 3rem;
+  width: 3rem;
+}
+.main-macronutriment-text {
+  display: flex;
+  flex-direction: column;
+}
+.main-macronutriment-text * {
+  color: white;
+  margin: 0;
+}/*# sourceMappingURL=Nutrition.css.map */

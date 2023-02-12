@@ -1,0 +1,70 @@
+.main-recipes {
+  display: flex;
+  flex-direction: column;
+}
+.main-recipes__title {
+  display: flex;
+  justify-content: center;
+  background-color: #333333;
+  margin: 0;
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: skyblue;
+}
+.main-recipe {
+  display: flex;
+  align-items: baseline;
+  background-color: #b3b3b3;
+  height: 50%;
+  padding: 1rem;
+}
+.main-recipe-nutrients {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #333333;
+}
+.main-recipe-nutrient {
+  display: flex;
+}
+.main-recipe__nutrients {
+  width: 25%;
+  font-size: 1rem;
+  padding: 0 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.main-recipe__icon {
+  align-self: center;
+  margin: 0 2rem;
+  height: 3rem;
+  width: 3rem;
+}
+.main-recipe-text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.main-recipe-text * {
+  margin: 0;
+}
+.main-recipe__link {
+  font-size: 0.7rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.main-recipe__link:hover {
+  background-color: blue;
+  color: white;
+}
+.main-recipe__subtitle {
+  width: 100%;
+}
+.main-recipe__title {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}/*# sourceMappingURL=Recipes.css.map */

@@ -9,7 +9,7 @@
       margin: 0;
       font-size: 2rem;
       padding: 1rem 0;
-      color: white;
+      color: skyblue;
     }
   }
   &-recipe {
@@ -30,8 +30,12 @@
       display: flex;
     }
     &__nutrients {
-      font-size: 1.6remrem;
+      width: 25%;
+      font-size: 1rem;
+      padding: 0 1rem;
       color: white;
+      display: flex;
+      justify-content: center;
     }
     &__icon {
       align-self: center;
