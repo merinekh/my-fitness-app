@@ -2,6 +2,15 @@
   &-recipes {
     display: flex;
     flex-direction: column;
+    &__title {
+      display: flex;
+      justify-content: center;
+      background-color: #333333;
+      margin: 0;
+      font-size: 2rem;
+      padding: 1rem 0;
+      color: white;
+    }
   }
   &-recipe {
     display: flex;
@@ -9,6 +18,21 @@
     background-color: #b3b3b3;
     height: 50%;
     padding: 1rem;
+
+    &-nutrients {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 1rem 0;
+      background-color: #333333;
+    }
+    &-nutrient {
+      display: flex;
+    }
+    &__nutrients {
+      font-size: 1.6remrem;
+      color: white;
+    }
     &__icon {
       align-self: center;
       margin: 0 2rem;

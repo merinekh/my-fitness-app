@@ -22,6 +22,8 @@ function Recipes() {
   };
   const [recipes, setRecipes] = useState([]);
 
+  const [nutriments, setNutriments] = useState([]);
+
   const [breakfastMeal, setBreakfastMeal] = useState([]);
   const [lunchMeal, setLunchMeal] = useState([]);
   const [dinnerMeal, setDinnerMeal] = useState([]);
@@ -36,6 +38,7 @@ function Recipes() {
         setBreakfastMeal(response.data.meals[0]);
         setLunchMeal(response.data.meals[1]);
         setDinnerMeal(response.data.meals[2]);
+        setNutriments(response.data.nutrients);
       })
       .catch(function (error) {
         console.error(error);
@@ -43,13 +46,26 @@ function Recipes() {
     // };
     // apiCall();
   }, []);
-  console.log(breakfastMeal.sourceUrl);
-  // const breakfastNutriments = recipes.nutrients[0];
-  // const lunchNutriments = recipes.nutrients[1];
-  // const dinnerNutriments = recipes.nutrients[2];
+  // console.log(nutriments);
   return (
     <>
       <div className="main-recipes">
+        <h6 className="main-recipes__title">Your Meal Plan</h6>
+        <div className="main-recipe-nutrients">
+          <h6 className="main-recipe__nutrients">
+            Calories : {Math.round(nutriments.calories)}
+          </h6>
+          <h6 className="main-recipe__nutrients">
+            Protein : {Math.round(nutriments.protein)}g
+          </h6>
+          <h6 className="main-recipe__nutrients">
+            Carbs : {Math.round(nutriments.carbohydrates)}g
+          </h6>
+          <h6 className="main-recipe__nutrients">
+            Fat : {Math.round(nutriments.fat)}g
+          </h6>
+        </div>
+
         <div className="main-recipe">
           <img src={breakfast} alt="" className="main-recipe__icon" />
           <div className="main-recipe-text">
