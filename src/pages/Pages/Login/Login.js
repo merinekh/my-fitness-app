@@ -71,10 +71,17 @@ function Login() {
                 src={userData.avatar}
                 alt={userData.name}
               />
-              <p className="login-profile__text">Name: {userData.name}</p>
-              <p className="login-profile__text">Email: {userData.email}</p>
               <p className="login-profile__text">
-                Location: {userData.location}
+                <span className="login-profile-subtitle">Name:</span>{" "}
+                {userData.name}
+              </p>
+              <p className="login-profile__text">
+                <span className="login-profile-subtitle"> Email:</span>{" "}
+                {userData.email}
+              </p>
+              <p className="login-profile__text">
+                <span className="login-profile-subtitle">Location:</span>{" "}
+                {userData.location}
               </p>
             </div>
             <button

@@ -53,16 +53,20 @@ function Recipes() {
         <h6 className="main-recipes__title">Your Meal Plan</h6>
         <div className="main-recipe-nutrients">
           <h6 className="main-recipe__nutrients">
-            Calories : {Math.round(nutriments.calories)}
+            Calories : <br />
+            {Math.round(nutriments.calories)}
           </h6>
           <h6 className="main-recipe__nutrients">
-            Protein : {Math.round(nutriments.protein)}g
+            Protein : <br />
+            {Math.round(nutriments.protein)}g
           </h6>
           <h6 className="main-recipe__nutrients">
-            Carbs : {Math.round(nutriments.carbohydrates)}g
+            Carbs : <br />
+            {Math.round(nutriments.carbohydrates)}g
           </h6>
           <h6 className="main-recipe__nutrients">
-            Fat : {Math.round(nutriments.fat)}g
+            Fat : <br />
+            {Math.round(nutriments.fat)}g
           </h6>
         </div>
 

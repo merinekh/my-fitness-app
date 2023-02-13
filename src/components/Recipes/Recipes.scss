@@ -11,6 +11,12 @@
       font-size: 2rem;
       padding: 1rem 0;
       color: skyblue;
+      @include tablet {
+        padding: 1.7rem;
+      }
+      @include desktop {
+        padding: 2.2rem;
+      }
     }
   }
   &-recipe {
@@ -26,13 +32,25 @@
       width: 100%;
       padding: 1rem;
       background-color: #333333;
+      @include tablet {
+        padding: 1rem;
+      }
+      @include desktop {
+        padding: 1rem 1.6rem;
+      }
     }
     &-nutrient {
       display: flex;
     }
     &__nutrients {
       font-size: 1rem;
+      display: flex;
+      text-align: center;
       color: white;
+
+      @include desktop {
+        font-size: 1.4rem;
+      }
     }
     &__icon {
       align-self: center;
@@ -58,17 +76,42 @@
         background-color: blue;
         color: white;
       }
+      @include tablet {
+        background-color: #b3b3b3;
+        text-align: left;
+        padding: 0;
+      }
+      @include desktop {
+        background-color: #0095ff;
+        text-align: center;
+        padding: 1rem;
+      }
     }
     &__subtitle {
       width: 100%;
+
+      @include desktop {
+        font-size: 1.4rem;
+      }
     }
     &__title {
       font-size: 1.6rem;
       margin: 1rem 0;
       font-weight: bold;
       @include tablet {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        margin: 0.7rem 0;
       }
+
+      @include desktop {
+        font-size: 1.6rem;
+      }
+    }
+    @include tablet {
+      padding: 0.5rem;
+    }
+    @include desktop {
+      padding: 1rem;
     }
   }
 }

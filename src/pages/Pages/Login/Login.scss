@@ -27,8 +27,12 @@
     padding: 1rem;
 
     &__avatar {
-      border-radius: 2rem;
+      border-radius: 12rem;
       margin-bottom: 1rem;
+    }
+
+    &-subtitle {
+      font-weight: bold;
     }
 
     &__text {
