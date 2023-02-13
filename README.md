@@ -62,13 +62,9 @@ https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb
 ### Mobile
 
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobile-exercices.png)
-
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobile-login.png)
-
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobile-register.png)
-
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobile-logedin.png)
-
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobilesavedExercices.png)
 
 ### Tablet
