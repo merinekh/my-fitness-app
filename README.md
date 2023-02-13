@@ -84,3 +84,8 @@ https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb
 - Developed expertise in designing and implementing a carousel
 - Acquired proficiency in planning and executing a complete project, including both front-end and back-end components
 - Learned to efficiently use icons from various libraries
+
+## Next Steps
+
+- Implementation of a user information form to gather additional data on the user to personalize training and meal plans
+- Integration of a personalized meal and workout plan, accessible upon login, based on the user's preferences and goals.
