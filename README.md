@@ -22,18 +22,18 @@
 
 Install my-project with npm
 ## Steps
-1) Clone the repository
+### 1) Clone the repository
 
 ```
     git clone git@github.com:merinekh/my-fitness-app.git
     git clone git@github.com:merinekh/my-fitness-app-server.git
 ```
-2) Install the dependencies
+### 2) Install the dependencies
 ```
     npm install react, react-router, react-bootstrap, scss, @emotion, @mui, bootstrap, react-icons, express, axios
 
 ```
-3) Start the development server
+### 3) Start the development server
 ```
     cd my-fitness-app-server
     npm run dev
