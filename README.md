@@ -59,7 +59,7 @@ https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Mobile
 
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobile-exercices.png)
 
@@ -71,13 +71,13 @@ https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb
 
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobilesavedExercices.png)
 
+### Tablet
 
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/tablet-dashboard.png)
-
-
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/tablet-exercies.png)
-
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/tablet-savedExercices.png)
+
+### Desktop
 
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/desktop-savedExercices.png)
 
