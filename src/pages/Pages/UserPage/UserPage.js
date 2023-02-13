@@ -43,7 +43,7 @@ function UserPage() {
   const card = () => {
     return favoriteExercices.map((element) => {
       return (
-        <div className="carousel-item exercices-card" key={element.id}>
+        <div className="exercices-card user-card" key={element.id}>
           <h2 className="exercices-card__title">
             {element.name.toUpperCase()}
           </h2>
@@ -106,7 +106,12 @@ function UserPage() {
       });
   };
 
-  return <>{card()}</>;
+  return (
+    <>
+      {" "}
+      <div className="user-cards">{card()}</div>
+    </>
+  );
 }
 
 export default UserPage;

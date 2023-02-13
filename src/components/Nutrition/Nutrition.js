@@ -9,7 +9,7 @@ function Nutrition() {
   return (
     <>
       <div className="main-nutrition">
-        <div className="main-macronutriments">
+        {/* <div className="main-macronutriments">
           <div className="main-macronutriment">
             <GiMeat className="main-macronutriment__icon"></GiMeat>
             <div className="main-macronutriment-text">
@@ -39,7 +39,7 @@ function Nutrition() {
               <h4 className="main-macronutriment__text">1/5L</h4>
             </div>
           </div>
-        </div>
+        </div> */}
         <Recipes />
       </div>
     </>

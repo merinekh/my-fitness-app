@@ -127,8 +127,7 @@ function ExercicesPage() {
                 <h3 className="exercices-card__target">
                   {element.target.toUpperCase()}
                 </h3>
-              </div>
-              <div className="exercices-card-info">
+
                 <h4 className="exercices-card__subtitle">Body Part: </h4>
                 <h3 className="exercices-card__target">
                   {element.bodyPart.toUpperCase()}

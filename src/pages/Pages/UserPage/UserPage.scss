@@ -1,7 +1,26 @@
+@use "../../../styles/partials/mixins.scss" as *;
 .user {
+  &-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet {
+      justify-content: space-evenly;
+    }
+  }
   &-card {
     &__delete {
-      background-color: red;
+      background-color: orange;
+      &:hover {
+        background-color: red;
+      }
+    }
+    @include tablet {
+      width: 44%;
+    }
+
+    @include desktop {
+      width: 28%;
     }
   }
 }

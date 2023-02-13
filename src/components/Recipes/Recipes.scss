@@ -1,3 +1,4 @@
+@use "../../styles/partials/mixins.scss" as *;
 .main {
   &-recipes {
     display: flex;
@@ -9,7 +10,7 @@
       margin: 0;
       font-size: 2rem;
       padding: 1rem 0;
-      color: white;
+      color: skyblue;
     }
   }
   &-recipe {
@@ -23,14 +24,14 @@
       display: flex;
       justify-content: space-evenly;
       width: 100%;
-      padding: 1rem 0;
+      padding: 1rem;
       background-color: #333333;
     }
     &-nutrient {
       display: flex;
     }
     &__nutrients {
-      font-size: 1.6remrem;
+      font-size: 1rem;
       color: white;
     }
     &__icon {
@@ -64,6 +65,10 @@
     &__title {
       font-size: 1.6rem;
       margin: 1rem 0;
+      font-weight: bold;
+      @include tablet {
+        font-size: 1rem;
+      }
     }
   }
 }
