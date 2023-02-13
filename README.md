@@ -74,7 +74,7 @@ https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb
 ### Tablet
 
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/tablet-dashboard.png)
-![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/tablet-exercies.png)
+![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/tablet-exercices.png)
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/tablet-savedExercices.png)
 
 ### Desktop
