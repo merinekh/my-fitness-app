@@ -50,31 +50,31 @@ function Recipes() {
   return (
     <>
       <div className="main-recipes">
-        <h6 className="main-recipes__title">Your Meal Plan</h6>
+        <h1 className="main-recipes__title">Your Meal Plan</h1>
         <div className="main-recipe-nutrients">
-          <h6 className="main-recipe__nutrients">
+          <h3 className="main-recipe__nutrients">
             Calories : <br />
             {Math.round(nutriments.calories)}
-          </h6>
-          <h6 className="main-recipe__nutrients">
+          </h3>
+          <h3 className="main-recipe__nutrients">
             Protein : <br />
             {Math.round(nutriments.protein)}g
-          </h6>
-          <h6 className="main-recipe__nutrients">
+          </h3>
+          <h3 className="main-recipe__nutrients">
             Carbs : <br />
             {Math.round(nutriments.carbohydrates)}g
-          </h6>
-          <h6 className="main-recipe__nutrients">
+          </h3>
+          <h3 className="main-recipe__nutrients">
             Fat : <br />
             {Math.round(nutriments.fat)}g
-          </h6>
+          </h3>
         </div>
 
         <div className="main-recipe">
           <img src={breakfast} alt="" className="main-recipe__icon" />
           <div className="main-recipe-text">
-            <h6 className="main-recipe__subtitle">Breakfast</h6>
-            <h4 className="main-recipe__title">{breakfastMeal.title}</h4>
+            <h3 className="main-recipe__subtitle">Breakfast</h3>
+            <h2 className="main-recipe__title">{breakfastMeal.title}</h2>
             <a
               target="_blank"
               className="btn main-recipe__link "
@@ -88,9 +88,9 @@ function Recipes() {
         <div className="main-recipe">
           <img src={lunch} alt="" className="main-recipe__icon" />
           <div className="main-recipe-text">
-            <h6 className="main-recipe__subtitle">Lunch</h6>
+            <h3 className="main-recipe__subtitle">Lunch</h3>
 
-            <h4 className="main-recipe__title">{lunchMeal.title}</h4>
+            <h2 className="main-recipe__title">{lunchMeal.title}</h2>
             <a
               target="_blank"
               className="btn main-recipe__link "
@@ -104,9 +104,9 @@ function Recipes() {
         <div className="main-recipe">
           <img src={dinner} alt="" className="main-recipe__icon" />
           <div className="main-recipe-text">
-            <h6 className="main-recipe__subtitle">Dinner</h6>
+            <h3 className="main-recipe__subtitle">Dinner</h3>
 
-            <h4 className="main-recipe__title">{dinnerMeal.title}</h4>
+            <h2 className="main-recipe__title">{dinnerMeal.title}</h2>
             <a
               target="_blank"
               className="btn main-recipe__link "

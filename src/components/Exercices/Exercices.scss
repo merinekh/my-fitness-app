@@ -11,6 +11,7 @@
     &-filter {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       width: 100%;
       h3 {
         margin: 0 0.5rem;
@@ -36,6 +37,11 @@
     }
     @include tablet {
       width: 33%;
+    }
+    &__bodypart {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 0.1rem solid gray;
     }
   }
 }

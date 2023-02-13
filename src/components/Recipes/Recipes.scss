@@ -8,7 +8,6 @@
       justify-content: center;
       background-color: #333333;
       margin: 0;
-      font-size: 2rem;
       padding: 1rem 0;
       color: skyblue;
       @include tablet {
@@ -43,7 +42,6 @@
       display: flex;
     }
     &__nutrients {
-      font-size: 1rem;
       display: flex;
       text-align: center;
       color: white;
@@ -95,7 +93,6 @@
       }
     }
     &__title {
-      font-size: 1.6rem;
       margin: 1rem 0;
       font-weight: bold;
       @include tablet {
@@ -106,12 +103,6 @@
       @include desktop {
         font-size: 1.6rem;
       }
-    }
-    @include tablet {
-      padding: 0.5rem;
-    }
-    @include desktop {
-      padding: 1rem;
     }
   }
 }

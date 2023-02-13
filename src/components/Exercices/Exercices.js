@@ -6,15 +6,15 @@ function Exercices() {
     <>
       <div className="main-exercices">
         <div className="main-exercices-filter">
-          <h3 className="main-exercices__bodypart">Chest</h3>
-          <h3 className="main-exercices__bodypart">Shoulder</h3>
-          <h3 className="main-exercices__bodypart">Abs</h3>
-          <h3 className="main-exercices__bodypart">Leg</h3>
+          <h2 className="main-exercices__bodypart">Chest</h2>
+          <h2 className="main-exercices__bodypart">Shoulder</h2>
+          <h2 className="main-exercices__bodypart">Abs</h2>
+          <h2 className="main-exercices__bodypart">Leg</h2>
         </div>
         <img src={bodypart} alt="" className="main-exercices__image" />
         <div className="main-exercices-info">
-          <h5 className="main-exercices__height">Height: 6ft 4inch</h5>
-          <h5 className="main-exercices__weight">Weight: 145 lbs</h5>
+          <h3 className="main-exercices__height">Height: 6ft 4inch</h3>
+          <h3 className="main-exercices__weight">Weight: 145 lbs</h3>
         </div>
       </div>
     </>

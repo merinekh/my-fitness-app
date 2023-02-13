@@ -32,6 +32,13 @@
 
     &__title {
       font-weight: bold;
+      font-size: 1.5rem;
+      @include tablet {
+        font-size: 2.5rem;
+      }
+      @include desktop {
+        font-size: 3.5rem;
+      }
     }
     &__image {
       display: flex;
@@ -62,6 +69,20 @@
     }
     &__subtitle {
       font-weight: bold;
+      @include tablet {
+        font-size: 2rem;
+      }
+      @include desktop {
+        font-size: 2.5rem;
+      }
+    }
+    &__target {
+      @include tablet {
+        font-size: 2rem;
+      }
+      @include desktop {
+        font-size: 2.5rem;
+      }
     }
     @include mobile {
       width: 100%;
