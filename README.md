@@ -78,3 +78,9 @@ https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb
 ![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/desktop-savedExercices.png)
 
 
+## Lessons Learned
+
+- Acquired proficiency in utilizing Bootstrap and various libraries
+- Developed expertise in designing and implementing a carousel
+- Acquired proficiency in planning and executing a complete project, including both front-end and back-end components
+- Learned to efficiently use icons from various libraries
