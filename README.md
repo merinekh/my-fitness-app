@@ -1,70 +1,84 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My Fitness App
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Client:** React, React Router, React-bootstrap, Scss, @emotion, @mui, Bootstrap, React-icons
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Server:** Node, Express, Axios
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- User Login
+- Daily Meal Prep Generator
+- Filter Exercises by Equipment
+- Save Favorite Exercises
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install my-project with npm
+## Steps
+1) Clone the repository
 
-### `npm run eject`
+```
+    git clone git@github.com:merinekh/my-fitness-app.git
+    git clone git@github.com:merinekh/my-fitness-app-server.git
+```
+2) Install the dependencies
+```
+    npm install react, react-router, react-bootstrap, scss, @emotion, @mui, bootstrap, react-icons, express, axios
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+3) Start the development server
+```
+    cd my-fitness-app-server
+    npm run dev
+    cd ../my-fitness-app
+    npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API Reference
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Recipe - Food - Nutrition
+https://rapidapi.com/spoonacular/api/recipe-food-nutrition
+##### The spoonacular Recipe - Food - Nutrition API gives access to thousands of recipes, storebought packaged foods, and chain restaurant menu items.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### ExerciceDB
+https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb
+##### The ExerciseDB gives access to over 1300 exercises with individual exercise data and animated demonstrations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshots
 
-### Making a Progressive Web App
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobile-exercices.png)
 
-### Advanced Configuration
+![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobile-login.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobile-register.png)
 
-### Deployment
+![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobile-logedin.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/mobilesavedExercices.png)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/tablet-dashboard.png)
+
+
+![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/tablet-exercies.png)
+
+![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/tablet-savedExercices.png)
+
+![App Screenshot](https://github.com/merinekh/my-fitness-app/blob/develop/CapstoneImages/desktop-savedExercices.png)
+
+
