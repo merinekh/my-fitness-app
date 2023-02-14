@@ -99,8 +99,11 @@ function ExercicesPage() {
   // ========================OnclickHandler Save Exercice=========================================
 
   const handleSave = (e) => {
+    console.log(e.target.id);
     axios
-      .post(API_URL + API_PATH + `/favorite`, e.target.id)
+      .post(API_URL + API_PATH + `/favorite/${e.target.id}`, {
+        id: e.target.id,
+      })
       .then(alert("Saved"))
       .catch((err) => {
         console.log(err);

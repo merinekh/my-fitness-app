@@ -63,7 +63,7 @@ function Login() {
         <>
           <div className="login-success">
             <h1 className="login__title">
-              Welcome, {user} to you Fitness App!
+              Welcome, {user} to your Fitness App!
             </h1>
             <div className="login-profile">
               <img

@@ -82,7 +82,9 @@ function UserPage() {
   //=================================Delete Favorite================================
   const handleDelete = (e) => {
     axios
-      .delete(API_URL + API_PATH + `/favorite/${e.target.id} `)
+      .delete(API_URL + API_PATH + `/favorite/${e.target.id} `, {
+        id: e.target.id,
+      })
       .then(
         axios
           .get(API_URL + API_PATH + `/favorite`)
