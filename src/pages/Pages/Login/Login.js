@@ -3,10 +3,10 @@ import { useState } from "react";
 import "./Login.scss";
 import axios from "axios";
 
-function Login() {
+function Login({ user, setUser }) {
   const API_URL = "http://localhost:8080/";
   const API_PATH = "login";
-  const [user, setUser] = useState(null);
+  // const [user, setUser] = useState(null);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [formType, setFormType] = useState("login");
