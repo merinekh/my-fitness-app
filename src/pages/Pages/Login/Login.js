@@ -3,14 +3,14 @@ import { useState } from "react";
 import "./Login.scss";
 import axios from "axios";
 
-function Login({ user, setUser }) {
+function Login({ user, setUser, userData, setUserData }) {
   const API_URL = "http://localhost:8080/";
   const API_PATH = "login";
   // const [user, setUser] = useState(null);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [formType, setFormType] = useState("login");
-  const [userData, setUserData] = useState([]);
+  // const [userData, setUserData] = useState([]);
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -23,7 +23,7 @@ function Login({ user, setUser }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (formType === "login") {
-      console.log(`Login attempt:`);
+      // console.log(`Login attempt:`);
       axios
         .post(API_URL + API_PATH, {
           username,
@@ -63,7 +63,7 @@ function Login({ user, setUser }) {
         <>
           <div className="login-success">
             <h1 className="login__title">
-              Welcome, {user} to your Fitness App!
+              Welcome, <b>{user}</b> to your Fitness App!
             </h1>
             <div className="login-profile">
               <img

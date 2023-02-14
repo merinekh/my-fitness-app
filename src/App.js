@@ -10,6 +10,7 @@ import { useState } from "react";
 function App() {
   const [user, setUser] = useState(null);
 
+  const [userData, setUserData] = useState([]);
   return (
     <div className="App">
       <BrowserRouter className="page-container">
@@ -18,7 +19,17 @@ function App() {
           <Route path="/HomePage" element={<HomePage />} />
           <Route path="/exercices" element={<ExercicesPage />} />
           <Route path="/userPage" element={<UserPage />} />
-          <Route path="" element={<Login user={user} setUser={setUser} />} />
+          <Route
+            path=""
+            element={
+              <Login
+                user={user}
+                setUser={setUser}
+                userData={userData}
+                setUserData={setUserData}
+              />
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>
