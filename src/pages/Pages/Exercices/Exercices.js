@@ -114,7 +114,7 @@ function ExercicesPage() {
   const card = () => {
     return equipment.map((element) => {
       return (
-        <Carousel.Item>
+        <Carousel.Item key={element.id}>
           <div className="carousel-item exercices-card" key={element.id}>
             <h2 className="exercices-card__title">
               {element.name.toUpperCase()}
