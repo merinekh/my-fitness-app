@@ -35,10 +35,10 @@ function Login({ user, setUser, userData, setUserData }) {
           setUserData(res.data);
         })
         .catch((error) => {
-          alert(error.response.data);
+          alert("Wrong Username or Password!");
         });
     } else if (formType === "register") {
-      console.log(`Registration attempt:`);
+      // console.log(`Registration attempt:`);
 
       axios
         .put(API_URL + API_PATH + "/register", {
