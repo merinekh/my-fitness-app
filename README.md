@@ -1,5 +1,5 @@
 
-# My Fitness App
+# DailyFit
 
 
 
